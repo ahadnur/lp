@@ -37,7 +37,7 @@ nav {
 }
 
 .home {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,6 +60,7 @@ nav {
     font-size: 20px;
     margin-bottom: 30px;
     opacity: .5;
+    width: 600px;
 }
 .text button{
     border: none;
@@ -69,9 +70,57 @@ nav {
     color: white;
     font-size: 18px;
     border-radius: 50px;
+    cursor: pointer
+}
+
+.text button:hover{
+    color: #f08080;
+    background: none;
+    border: 1px solid #f08080;
 }
 
 .img img{
     width: 70%;
     margin-left: 80px;
+}
+
+/* About section style */
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.img{
+    flex: 1;
+}
+.about__text{
+    flex: 1;
+}
+
+.about__text h1{
+    font-size: 40px;
+    color: #90f5a0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.about__text p{
+    color: white;
+    max-width: 600px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.about__text button{
+    border: none;
+    outline: none;
+    background: #90f5a0;
+    padding: 10px 30px;
+    color: rgb(33, 32, 90);
+    font-size: 18px;
+    cursor: pointer;
 }
